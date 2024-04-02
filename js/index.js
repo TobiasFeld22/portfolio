@@ -21,3 +21,7 @@ function startTypingAnimation() {
         setTimeout(startTypingAnimation, 100000);
     });
 }
+
+$(function(){
+    $("#navbar-industries").load("includes/navbar.html"); 
+});

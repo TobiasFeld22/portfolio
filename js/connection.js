@@ -66,12 +66,11 @@ $(document).ready(function () {
 
     $("#nasa-button").click(function () {
         var date = $("#input-day").val()
-        if (date) {
+        if (date && date <= currentDate) {
             $.ajax({
                 url: "https://api.nasa.gov/planetary/apod?api_key=bsPRpZDc6DamuGnYCn9bHa5cbKr5gqjxVKafECXQ&date=" + date + "",
                 method: 'GET',
                 success: function (response) {
-                    console.log(response);
                     $("#nasa-title").html(response.title);
                     $("#nasa-content").html(response.explanation);
                     $("#small-date").html(response.date);
@@ -92,23 +91,11 @@ $(document).ready(function () {
                 }
             });
         } else {
-            alert("Misschien iets invullen?");
+            alert("Misschien iets invullen of iets goeds invullen?");
         }
-
-
-
-
-
-
-
-
-
-
-
     });
-
-
-
-
 });
 
+$(function(){
+    $("#navbar-industries").load("includes/navbar.html"); 
+});
