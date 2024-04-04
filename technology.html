@@ -28,16 +28,79 @@
     </header>
     <div id="navbar-industries"></div>
     <main>
-        <div class="gradient-home d-flex align-items-center justify-content-center vh-100">
+        <div class="gradient-home d-flex align-items-center justify-content-center ">
             <div class="project-box border-gradient w-75 container">
                 <div class="row">
                     <div class="col">
-                        Test
+                        <h1 class="">Smart Technology</h1>
+                        <p class="p-1">Het ontwerpen van een internet of things schakeling voor het monitoren en in
+                            leven houden van mn planten.</p>
+                        <p class="p-1">Op deze pagina heb ik mijn route uitgestippeld, van het maken van een prototype
+                            naar het verbinden & aansluiten aan een fysiek product.</p>
                     </div>
                     <div class="col">
-                        <div id="stl_cont" style="height: 500px"></div>
                     </div>
                 </div>
+                <hr />
+                <div class="row">
+                    <div class="col-sm text-center">
+                        <img class="object-fit-cover" src="./files/iot.webp"
+                            style="height: 500px; object-fit: cover; width: 100%; border-radius: 4px" / />
+                    </div>
+                    <div class="col">
+                        <h1>IoT schakeling</h1>
+                        <p>Bij de lessen van Matthijs heb ik doormiddel van het volgen van de instructies in de
+                            workshops een werkend prototype opgezet op meerdere breadboards. Door het communiceren met
+                            de database van InfluxDB is het nu ook mogelijk om de sensoriek uit te lezen vanaf het
+                            internet </p>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+
+                    <div class="col">
+                        <h1>PcB ontwerp</h1>
+                        <p>Voor het ontwerpen van de een pcb hebben we gebruik gemaakt van Autodesk Eagle. Dit was voor
+                            mij een nieuwe ervaring, omdat ik hiervoor alleen (hobby-matig) gewerkt had met Kicad en
+                            EasyEda. </p>
+                        <p> Eerst heb ik een schematica gemaakt, waarin ik de connecties heb getekend die overeenkwamen
+                            met het prototype dat ik in de eerste lessen heb gemaakt. Daarna heb ik de losse componenten
+                            in het PCB geplaatst en doormiddel van DRC-checks (design rule constraints) gecontrolleerd
+                            of het realistisch te produceren.</p>
+                    </div>
+                    <div class="col-sm text-center">
+                        <img class="object-fit-cover" src="./files/pcb.webp"
+                            style="height: 500px; object-fit: cover; width: 100%" />
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col">
+                        <h1 class="">Behuizing ontwerpen</h1>
+                        <p class="p-1">Voor het ontwerpen van mijn bakje heb ik gebruik gemaakt van <a
+                                href="https://www.autodesk.nl/products/fusion-360/overview">Fusion360</a>, in tegen
+                            stelling tot het door school aangeleverde Solidworks. Dit omdat ik daarmee makkelijker op
+                            Mac os kon werken. Ook is dit de basis achter AutoDesk eagle, het programma dat we gebruikt
+                            hebben voor het ontwerpen van de PCB's</p>
+                        <p class="p-1">
+                            Het bakje moest zowel overeen komen met de gaten die in het PCB waren ontworpen, als de
+                            uitstekende onderdelen in het pcb. Ook moet er gedacht worden aan de volgende zaken:
+                        </p>
+
+                        <ul>
+                            <li>Ventilatie</li>
+                            <li>Gaten voor de DHT sensor</li>
+                            <li>Gaten voor de moisture sensor</li>
+                            <li>Een plek de water-pomp.</li>
+                        </ul>
+
+                    </div>
+                    <div class="col text-center">
+                        <div id="stl_cont" style="height: 500px"></div>
+                        <p style="color: red">Scroll en sleep om dieper in het bakje te kijken!</p>
+                    </div>
+                </div>
+                <hr />
             </div>
         </div>
     </main>
