@@ -106,3 +106,8 @@
 .big-text {
     font-size: 100px !important;
 }
+
+img.rounded {
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 2px 2px 4px
+}
